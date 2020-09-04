@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Ashley Long",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "client": "npm run start --prefix client",
+    "server": "nodemon -r dotenv/config index.js",
+    "start": "node -r dotenv/config index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "concurrently": "^5.3.0"
+  }
+}
