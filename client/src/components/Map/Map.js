@@ -16,7 +16,7 @@ class Map extends React.Component {
 
     componentDidMount(){
         // Get all markers from database, build the initial map view
-        this.loadMarkers('http://localhost:4000/api/markers')
+        this.loadMarkers('/api/markers')
             .then(markers => this.initMap(markers))
             .catch(err => console.log(err));
     }
@@ -48,18 +48,17 @@ class Map extends React.Component {
         });
     }
 
-    // Load our map data and structures
+    // Initialization of map view (integrating data layer)
     initMap = (geoJSONLayer) => {
         // Lazy load the ArcGIS API
         loadModules([
             'esri/Map', 
             'esri/Basemap', 
-            'esri/views/MapView', 
-            'esri/layers/GeoJSONLayer',
+            'esri/views/MapView',
             'esri/layers/VectorTileLayer', 
             'esri/symbols/PictureMarkerSymbol'
         ], { css: true })
-            .then(([ArcGISMap, Basemap, MapView, GeoJSONLayer, VectorTileLayer, PictureMarkerSymbol]) => {
+            .then(([ArcGISMap, Basemap, MapView, VectorTileLayer, PictureMarkerSymbol]) => {
                 // Set our custom basemap
                 const basemap = new Basemap({
                     baseLayers: [
@@ -96,9 +95,6 @@ class Map extends React.Component {
                 // Update some properties on the geoJSON layer
                 geoJSONLayer.renderer = locationRenderer;
                 geoJSONLayer.popupTemplate = template;
-
-                // Set up the test locations layer
-                const locationsLayer = 
 
                 // Create the map
                 this.map = new ArcGISMap({
