@@ -1,0 +1,673 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -1.149170, 52.955120 ]
+            },
+            "properties": {
+                "name": "World AIDS Day in Nottingham",
+                "date": "12/1/2017",
+                "year": 2017,
+                "country": "England",
+                "province": "Nottingham",
+                "type": [
+                    "Community",
+                    "Charity"
+                ],
+                "locations": [
+                    "National Justice Museum",
+                    "Nottingham Contemporary",
+                    "Nottingham Academy"
+                ],
+                "organisations": [
+                    "Terrence Higgins Trust",
+                    "African Institute for Social Development",
+                    "Champions for Change",
+                    "Food Chain",
+                    "BHIVA",
+                    "Full Effect"
+                ],
+                "topics": [
+                    "World AIDS Day",
+                    "HIV/AIDS Awareness"
+                ],
+                "designers": [
+                    "Joseph Laurel",
+                    "Kurt Geiger",
+                    "Mackage",
+                    "Strathberry",
+                    "Wolford"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ 0.513889, 52.829722 ]
+            },
+            "properties": {
+                "name": "Christmas at Sandringham",
+                "date": "12/25/2017",
+                "country": "England",
+                "province": "Sandringham",
+                "type": [
+                    "Family/Social"
+                ],
+                "locations": [
+                    "St. Mary Magdalene Church"
+                ],
+                "topics": [
+                    "Christmas"
+                ],
+                "designers": [
+                    "Chloé",
+                    "Maison Birks",
+                    "Philip Treacy",
+                    "Sentaler",
+                    "Stuart Weitzman"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.1123, 51.4635 ]
+            },
+            "properties": {
+                "name": "Reprezent 107.3FM in Brixton",
+                "date": "1/9/2018",
+                "country": "England",
+                "province": "Brixton",
+                "type": [
+                    "Community"
+                ],
+                "locations": [
+                    "Reprezent 107.3FM"
+                ],
+                "organisations": [
+                    "Reprezent 107.3FM"
+                ],
+                "topics": [
+                    "Youth",
+                    "Broadcasting",
+                    "Education",
+                    "Employment"
+                ],
+                "designers": [
+                    "Artizia",
+                    "Burberry",
+                    "Jigsaw",
+                    "Les Plaisirs de Birks",
+                    "Marks & Spencer",
+                    "Sarah Flint",
+                    "Smythe"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -3.183333, 51.483333 ]
+            },
+            "properties": {
+                "name": "Cardiff, Wales",
+                "date": "1/18/2018",
+                "country": "England",
+                "province": "Cardiff",
+                "type": [
+                    "Community"
+                ],
+                "locations": [
+                    "Cardiff Castle",
+                    "Tremfora",
+                    "Star Hub"
+                ],
+                "organisations": [
+                    "StreetGames"
+                ],
+                "topics": [
+                    "Sport",
+                    "Women's Advocacy"
+                ],
+                "designers": [
+                    "Demellier London",
+                    "Gabriela Artigas",
+                    "Huit Denim",
+                    "Maison Birks",
+                    "Missoma",
+                    "Stella McCartney",
+                    "Tabitha Simmons",
+                    "Theory",
+                    "Zofia Day"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.095893, 51.515671 ]
+            },
+            "properties": {
+                "name": "Endeavour Fund Awards",
+                "date": "2/1/2018",
+                "country": "England",
+                "province": "London",
+                "type": [
+                    "Community"
+                ],
+                "locations": [
+                    "Goldsmiths' Hall"
+                ],
+                "organisations": [
+                    "Endeavour Fund"
+                ],
+                "topics": [
+                    "Disability",
+                    "Servicemen & women",
+                    "Sport",
+                    "Veterans"
+                ],
+                "designers": [
+                    "Alexander McQueen",
+                    "Maison Birks",
+                    "Manolo Blahnik",
+                    "Les Plaisirs de Birks",
+                    "Prada",
+                    "Tuxe Bodywear"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -3.189, 55.953 ]
+            },
+            "properties": {
+                "name": "Edinburgh",
+                "date": "2/13/2018",
+                "country": "Scotland",
+                "province": "Edinburgh",
+                "type": [
+                    "Charity"
+                ],
+                "locations": [
+                    "Edinburgh Castle",
+                    "Social Bite",
+                    "Palace of Holyroodhouse"
+                ],
+                "organisations": [
+                    "Social Bite"
+                ],
+                "topics": [
+                    "Homelessness",
+                    "Youth"
+                ],
+                "designers": [
+                    "Burberry",
+                    "Maison Birks",
+                    "Missoma",
+                    "Strathberry",
+                    "Veronica Beard",
+                    "Wolford"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.081889, 51.5145 ]
+            },
+            "properties": {
+                "name": "Royal Foundation Forum",
+                "date": "2/28/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Charity"
+                ],
+                "locations": [
+                    "Aviva"
+                ],
+                "organisations": [
+                    "Royal Foundation",
+                    "Heads Together"
+                ],
+                "topics": [
+                    "Women's Advocacy",
+                    "Mental Health"
+                ],
+                "designers": [
+                    "Aquazzura",
+                    "Isabel Marant",
+                    "Jason Wu",
+                    "Maison Birks"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -1.886058, 52.482908 ]
+            },
+            "properties": {
+                "name": "International Women's Day in Birmingham",
+                "date": "3/8/2018",
+                "province": "Birmingham",
+                "country": "England",
+                "type": [
+                    "Charity"
+                ],
+                "locations": [
+                    "Millenium Point",
+                    "Nechells Wellbeing Centre"
+                ],
+                "organisations": [
+                    "Stemettes",
+                    "Coach Core",
+                    "Create Development"
+                ],
+                "topics": [
+                    "Women's Advocacy",
+                    "Gender Equality",
+                    "STEM",
+                    "Sport"
+                ],
+                "designers": [
+                    "Alexander Wang",
+                    "ALLSAINTS",
+                    "Altuzarra",
+                    "J. Crew",
+                    "Maison Birks",
+                    "Manolo Blahnik"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.1275, 51.499444 ]
+            },
+            "properties": {
+                "name": "Commonwealth Day Service",
+                "date": "3/12/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "The Commonwealth",
+                    "Diplomacy"
+                ],
+                "locations": [
+                    "Westminster Abbey"
+                ],
+                "organisations": [
+                    "Royal Commonwealth Society"
+                ],
+                "topics": [
+                    "The Commonwealth"
+                ],
+                "designers": [
+                    "Adina Reyter",
+                    "Amanda Wakeley",
+                    "Manolo Blahnik",
+                    "Mulberry",
+                    "Stephen Jones"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.1275, 51.499444 ]
+            },
+            "properties": {
+                "name": "Belfast",
+                "date": "3/23/2018",
+                "province": "Belfast",
+                "country": "Northern Ireland",
+                "type": [
+                    "Diplomacy"
+                ],
+                "locations": [
+                    "Eikon Centre",
+                    "Crown Liquor Saloon",
+                    "Catalyst Inc.",
+                    "Titanic Belfast"
+                ],
+                "organisations": [
+                    "Co-operation Ireland",
+                    "National Trust",
+                    "Catalyst Inc."
+                ],
+                "topics": [
+                    "Youth",
+                    "Entrepreneurship"
+                ],
+                "designers": [
+                    "Charlotte Elizabeth",
+                    "Greta Constantine",
+                    "Jimmy Choo",
+                    "Mackage",
+                    "Victoria Beckham"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -2.331460, 51.363780 ]
+            },
+            "properties": {
+                "name": "Invictus Games Team Trials",
+                "date": "4/6/2018",
+                "province": "Bath",
+                "country": "England",
+                "type": [
+                    "Charity"
+                ],
+                "locations": [
+                    "University of Bath Sports Training Village"
+                ],
+                "organisations": [
+                    "Invictus Games",
+                    "Help for Heroes",
+                    "Endeavour Fund",
+                    "Royal British Legion"
+                ],
+                "topics": [
+                    "Disability",
+                    "Servicemen & women",
+                    "Sport",
+                    "Veterans"
+                ],
+                "designers": [
+                    "Artizia",
+                    "Mother Denim",
+                    "Vanessa Tugendhaft"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.129, 51.5005 ]
+            },
+            "properties": {
+                "name": "Commonwealth Heads of Government Meeting Youth Forum",
+                "date": "4/18/2018",
+                "province": "Westminster",
+                "country": "England",
+                "type": [
+                    "The Commonwealth"
+                ],
+                "locations": [
+                    "Queen Elizabeth II Conference Centre"
+                ],
+                "organisations": [
+                    "The Commonwealth Heads of Government"
+                ],
+                "topics": [
+                    "The Commonwealth",
+                    "Youth"
+                ],
+                "designers": [
+                    "Altuzarra",
+                    "Camilla And Marc",
+                    "Les Plaisirs De Birks Gold",
+                    "Tai Jewellery",
+                    "Tamara Mellon"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.1504, 51.5044 ]
+            },
+            "properties": {
+                "name": "Commonwealth Heads of Government Meeting Women's Empowerment Reception",
+                "date": "4/19/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "The Commonwealth"
+                ],
+                "locations": [
+                    "Royal Aeronautical Society"
+                ],
+                "organisations": [
+                    "The Commonwealth Heads of Government",
+                    "Youth Forum",
+                    "Malala Fund",
+                    "Plan International",
+                    "Varkey Foundation",
+                    "Code Camp"
+                ],
+                "topics": [
+                    "Women's Advocacy",
+                    "The Commonwealth",
+                    "Youth"
+                ],
+                "designers": [
+                    "Aquazzura",
+                    "Black Halo",
+                    "Gucci",
+                    "Maison Birks"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.115722, 51.512889 ]
+            },
+            "properties": {
+                "name": "Invictus Games Reception",
+                "date": "4/21/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Patronage",
+                    "Diplomacy"
+                ],
+                "locations": [
+                    "Australia House, London"
+                ],
+                "organisations": [
+                    "High Commission of Australia",
+                    "Invictus Games"
+                ],
+                "topics": [
+                    "Disability",
+                    "Servicemen & women",
+                    "Sport",
+                    "Veterans"
+                ],
+                "designers": [
+                    "Alexander McQueen",
+                    "Cartier",
+                    "Manolo Blahnik",
+                    "Roland Mouret"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.177389, 51.501028 ]
+            },
+            "properties": {
+                "name": "The Queen's 92nd Birthday Party",
+                "date": "4/21/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Family",
+                    "The Commonwealth"
+                ],
+                "locations": [
+                    "Royal Albert Hall"
+                ],
+                "organisations": [
+                    "The Queen's Commonwealth Trust"
+                ],
+                "topics": [
+                    "The Commonwealth",
+                    "Entertainment"
+                ],
+                "designers": [
+                    "Manolo Blahnik",
+                    "Naeem Khan",
+                    "Shaun Leane",
+                    "Stella McCartney"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.126944, 51.508889 ]
+            },
+            "properties": {
+                "name": "Stephen Lawrence's 25th Anniversary Memorial Service",
+                "date": "4/23/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Commemoration"
+                ],
+                "locations": [
+                    "St. Martin-in-the-Fields Church"
+                ],
+                "organisations": [
+                    "Stephen Lawrence Charitable Trust"
+                ],
+                "topics": [
+                    "Stephen Lawrence Day",
+                    "Remembrance",
+                    "Racial Injustice",
+                    "Youth"
+                ],
+                "designers": [
+                    "Hugo Boss",
+                    "Manolo Blahnik",
+                    "Wilbur & Gussie"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.150833, 51.5025 ]
+            },
+            "properties": {
+                "name": "Anzac Day",
+                "date": "4/25/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Commemoration",
+                    "Diplomacy"
+                ],
+                "locations": [
+                    "Wellington Arch"
+                ],
+                "organisations": [
+                    "New Zealand High Commission",
+                    "Australian High Commission"
+                ],
+                "topics": [
+                    "Remembrance",
+                    "Servicemen & women",
+                    "Veterans"
+                ],
+                "designers": [
+                    "Gucci",
+                    "Sarah Flint",
+                    "Smythe"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.1275, 51.499444 ]
+            },
+            "properties": {
+                "name": "Anzac Day",
+                "date": "4/25/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Commemoration",
+                    "Diplomacy"
+                ],
+                "locations": [
+                    "Westminster Abbey"
+                ],
+                "organisations": [
+                    "New Zealand High Commission",
+                    "Australian High Commission"
+                ],
+                "topics": [
+                    "Remembrance",
+                    "Servicemen & women",
+                    "Veterans"
+                ],
+                "designers": [
+                    "Cartier",
+                    "Emilia Wickstead",
+                    "Jimmy Choo",
+                    "Philip Treacy"
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -0.60678, 51.48376 ]
+            },
+            "properties": {
+                "name": "The Royal Wedding of Prince Harry and Meghan Markle",
+                "date": "5/19/2018",
+                "province": "London",
+                "country": "England",
+                "type": [
+                    "Family"
+                ],
+                "locations": [
+                    "St. George's Chapel"
+                ],
+                "organisations": [],
+                "topics": [],
+                "designers": [
+                    "Cartier",
+                    "Claire Waight Keller",
+                    "Cleave and Company",
+                    "Givenchy",
+                    "Stella McCartney"
+                ]
+            }
+        }
+    ]
+}
