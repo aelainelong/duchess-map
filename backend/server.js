@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require('dotenv').config();
 
 // Import our database schema models
 let Tag = require('./models/tag');
@@ -12,19 +13,16 @@ let markerRouter = require('./routes/markerRouter');
 
 // Set up our express app
 const app = express();
-const port = 4000;
+const PORT = process.env.PORT || 4000;
 
 // Make sure request body is parsed into JSON format and server logs in dev mode
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// MongoDB Database
-const dbURL = 'mongodb+srv://ael_mdb_admin:UETZtOX2KXEMgI41@cluster0.xrijk.mongodb.net/duchess_map_db?retryWrites=true&w=majority';
-
 // Connect backend server to the database
 mongoose
-    .connect(dbURL, { 
+    .connect(process.env.DB_URI, { 
         useUnifiedTopology: true,
         useNewUrlParser: true
     })
@@ -39,7 +37,7 @@ mongoose.connection
 app.use('/api/markers', markerRouter);
 
 // Launch the backend server onto a port
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 
 
 
