@@ -65,6 +65,7 @@ class App extends React.Component {
 
   // Display the map once we've received successful load callback from map API
   showMap = () => {
+    console.log("Map is fully loaded.");
     this.setState(() => ({ mapReady: true }));
   }
 

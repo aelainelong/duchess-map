@@ -23,13 +23,8 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose
-    .connect(process.env.MONGODB_URI, { 
-        useUnifiedTopology: true,
-        useNewUrlParser: true
-    })
-    .catch(function (reason) {
-        console.log('Unable to connect to the mongodb instance. Error: ', reason);
-    });
+    .connect(process.env.MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
+    .catch(err => console.log('Unable to connect to the mongodb instance. Error: ', err));
 mongoose.connection
     .once('open', () => console.log("Successfully connected to the database."))
     .on('error', err => console.log("Error connecting to the database:", err));

@@ -16,49 +16,38 @@ class Map extends React.Component {
 
     componentDidMount(){
         // Get all markers from database, build the initial map view
-        this.loadMarkers('/api/markers')
-            .then(markers => this.initMap(markers))
+        this.loadGeoJSON('/api/markers')
+            .then(geoJSON => this.initMap(geoJSON.data))
             .catch(err => console.log(err));
     }
 
     componentWillUnmount(){
-        // Destroy the map view
+        // Destroy the map view when we're done
         if(this.view) {
             this.view.container = null;
         }
     }
 
     // Load the map markers from the API
-    loadMarkers = (apiURL) => {
-        return new Promise((resolve, reject) => {
-            loadModules(['esri/request', 'esri/layers/GeoJSONLayer'])
-            .then(([esriRequest, GeoJSONLayer]) => {
-                esriRequest(apiURL, {
-                    responseType: "json"
-                }).then(resp => {
-                    const blob = new Blob([JSON.stringify(resp.data)], {type: "application/json"});
-                    const dataLayer = new GeoJSONLayer({ 
-                        url: URL.createObjectURL(blob),
-                        title: "Map markers",
-                        outFields: ["*"]
-                    });
-                    resolve(dataLayer);
-                }).catch(err => reject(err));
-            });
-        });
+    loadGeoJSON = apiEndpoint => {
+        return loadModules(['esri/request'])
+               .then(([esriRequest]) => esriRequest(apiEndpoint, { responseType: "json" }))
+               .then(resp => Promise.resolve(resp))
+               .catch(err => Promise.reject(err));
     }
 
     // Initialization of map view (integrating data layer)
-    initMap = (geoJSONLayer) => {
+    initMap = geoJSON => {
         // Lazy load the ArcGIS API
         loadModules([
             'esri/Map', 
             'esri/Basemap', 
             'esri/views/MapView',
+            'esri/layers/GeoJSONLayer',
             'esri/layers/VectorTileLayer', 
             'esri/symbols/PictureMarkerSymbol'
         ], { css: true })
-            .then(([ArcGISMap, Basemap, MapView, VectorTileLayer, PictureMarkerSymbol]) => {
+            .then(([ArcGISMap, Basemap, MapView, GeoJSONLayer, VectorTileLayer, PictureMarkerSymbol]) => {
                 // Set our custom basemap
                 const basemap = new Basemap({
                     baseLayers: [
@@ -92,9 +81,15 @@ class Map extends React.Component {
                     content: "{date}"
                 };
 
-                // Update some properties on the geoJSON layer
-                geoJSONLayer.renderer = locationRenderer;
-                geoJSONLayer.popupTemplate = template;
+                // Create a new data layer from our GeoJSON
+                const blob = new Blob([JSON.stringify(geoJSON)], { type: "application/json" });
+                const geoJSONLayer = new GeoJSONLayer({
+                    url: URL.createObjectURL(blob),
+                    renderer: locationRenderer,
+                    popupTemplate: template,
+                    title: "Map markers",
+                    outFields: ["*"]
+                });
 
                 // Create the map
                 this.map = new ArcGISMap({
@@ -125,13 +120,10 @@ class Map extends React.Component {
                     }
                 });
 
-                // Run callback to display map interface once our map features are completely loaded
-                this.view.when(() => {
-                    console.log("Map is fully loaded.");
-                    this.props.showMap();
-                }, (error) => {
-                    console.log(`There was an error loading the requested map data. ${error}`);
-                });
+                // Display map interface once our map features are completely loaded
+                this.view.when()
+                .then(() => this.props.showMap())
+                .catch(err => console.log(`There was an error loading the requested map data. ${err}`));
 
                 // Set up click event handler for markers
                 this.view.on("click", e => {
@@ -140,7 +132,7 @@ class Map extends React.Component {
             });
     }
 
-    updateMap = (geoJSONLayer) => {
+    updateMap = (geoJSON) => {
 
     }
 
