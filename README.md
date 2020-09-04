@@ -1,4 +1,4 @@
-# duchess-map
+# The Duchess Map
 About The Duchess Map - a.k.a the "Meghan Markle Map"
 
 The Duchess Map is an interactive map that chronicles the official royal engagements of Meghan Markle, Duchess of Sussex, during her time as a working senior member of the British Royal Family from May 2018 - March 2020. The map details where the Duchess traveled, the organisations and dignitaries she met with, the topics she engaged with and the brands that she wore.
