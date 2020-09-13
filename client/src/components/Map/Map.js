@@ -235,7 +235,7 @@ class Map extends React.Component {
 
     // Toggle the map legend
     toggleLegend = () => {
-        this.setState(() => ({ legend: !this.state.legend}));
+        this.setState(prevState => ({ legend: !prevState.legend}));
     }
 
     render(){

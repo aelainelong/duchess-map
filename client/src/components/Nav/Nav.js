@@ -10,7 +10,7 @@ const Nav = (props) => {
     return (
         <NavWrap role="navigation">
             <NavToggle active={props.navOpen ? true : false}>
-                <NavToggleButton aria-label="Toggle navigation" onClick={(e) => (handleNavToggle(e))} active={props.navOpen ? true : false}>
+                <NavToggleButton aria-label="Toggle navigation" onClick={handleNavToggle} active={props.navOpen ? true : false}>
                     <span></span>
                     <span></span>
                     <span></span>

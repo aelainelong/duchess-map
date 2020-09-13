@@ -83,18 +83,18 @@ class App extends React.Component {
 
   // Toggle Admin Mode
   toggleAdmin = () => {
-    this.setState(() => ({ adminUser: !this.state.adminUser }));
+    this.setState(prevState => ({ adminUser: !prevState.adminUser }));
   }
 
   // Toggle Nav
   toggleNav = () => {
-    this.setState(() => ({ navOpen: !this.state.navOpen }));
+    this.setState(prevState => ({ navOpen: !prevState.navOpen }));
   }
 
   // Toggle 'View by Filter' Mode
   toggleFilterView = () => {
-    this.setState(() => ({
-      filterView: !this.state.filterView,
+    this.setState(prevState => ({
+      filterView: !prevState.filterView,
       timelineView: false,
       about: false
       // activeMarker: null,
@@ -104,8 +104,8 @@ class App extends React.Component {
 
   // Toggle 'View by Timeline' Mode
   toggleTimelineView = () => {
-    this.setState(() => ({
-      timelineView: !this.state.timelineView,
+    this.setState(prevState => ({
+      timelineView: !prevState.timelineView,
       filterView: false,
       about: false
       // activeMarker: null,
@@ -115,8 +115,8 @@ class App extends React.Component {
 
   // Toggle the About Panel
   toggleAbout = () => {
-    this.setState(() => ({ 
-      about: !this.state.about,
+    this.setState(prevState => ({ 
+      about: !prevState.about,
       timelineView: false,
       filterView: false
     }));
@@ -165,7 +165,7 @@ class App extends React.Component {
 
     return(
       <AdminMenu>
-        <button><LogoutIcon onClick={e => (this.toggleAdmin(e))} />Logout</button>
+        <button><LogoutIcon onClick={this.toggleAdmin} />Logout</button>
         {addIcon}
         {manageIcons}
       </AdminMenu>
@@ -174,7 +174,7 @@ class App extends React.Component {
 
   CloseAdmin = () => {
     return (
-      <button onClick={e => (this.toggleAdmin(e))}>Log In</button>
+      <button onClick={this.toggleAdmin}>Log In</button>
     );
   }
 
