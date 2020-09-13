@@ -13,7 +13,7 @@ const MarkerSchema = mongoose.Schema({
         year: Number,
         country: String,
         province: String,
-        type: { type: Array },
+        category: Array,
         locations: Array,
         organisations: Array,
         topics: Array,

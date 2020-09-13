@@ -190,9 +190,19 @@ class App extends React.Component {
                   <AdminLogin closeAdmin={this.CloseAdmin} />
                 </Route>
                 <Route path="/">
-                  <Map filterView={this.state.filterView} timelineView={this.state.timelineView} showMap={this.showMap} openMarker={this.setActiveMarker} />
+                  <Map 
+                    filterView={this.state.filterView} 
+                    timelineView={this.state.timelineView} 
+                    showMap={this.showMap} 
+                    setActiveMarker={this.setActiveMarker}
+                    clearActiveMarker={this.clearActiveMarker}
+                  />
                   {this.state.navOpen ? this.SharedPanel() : null}
-                  <Header adminUser={this.state.adminUser} adminMenu={this.AdminMenu} nav={this.ShareNav} />
+                  <Header 
+                    adminUser={this.state.adminUser} 
+                    adminMenu={this.AdminMenu} 
+                    nav={this.ShareNav} 
+                  />
                   {!this.state.mapReady ? <Loading /> : null}
                 </Route>
               </Switch>
